@@ -1,0 +1,92 @@
+#conversation {
+	display: block;
+	width: 100%;
+	height: 350px;
+	background: #9bbbd4;
+	vertical-align: top;
+	padding: 8px;
+	overflow-y: scroll;
+	float: left;
+}
+
+::-webkit-scrollbar {
+	width: 14px;
+	height: 18px;
+}
+
+::-webkit-scrollbar-thumb {
+	height: 6px;
+	border: 4px solid rgba(0, 0, 0, 0);
+	background-clip: padding-box;
+	background-color: rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 7px;
+	-webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px
+		1px 0px rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+
+.sender-hidden .username {
+	display: none;
+}
+
+.sender-hidden .photobox {
+	display: none;
+}
+
+.message {
+	margin: 7px;
+}
+
+.photo {
+	object-fit: cover;
+	object-position: top;
+	border-radius: 50%;
+}
+
+.lavatar {
+	width: 48px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+}
+
+.message span {
+	padding: 4px;
+	margin: 2px;
+	border-radius: 3px;
+}
+
+.textbox {
+	margin: 0 70px;
+}
+
+.message-mine {
+	text-align: right;
+}
+
+.message-mine .photobox {
+	float: right;
+}
+
+.message-mine span {
+	background: #fef01b;
+}
+
+.message-others span {
+	background: #ffffff;
+}
+
+.message-others .photobox {
+	float: left;
+}
