@@ -39,11 +39,11 @@ function showMessage(message) {
     var initial = message.username.charAt(0);
 	    
 	var message_class = ( $("#username").val() == message.username )? 'message-mine' : 'message-others';
-	var sender_class = ( last_sender == message.username )? 'sender-hidden' : 'sender';
+	var sender_class = ( last_sender == message.username )? 'sender-hidden' : 'sender-show';
 	$("#conversation")
 	.append("<div class='message "+message_class+" "+sender_class+"'>" +
-			"<div class='photobox'><img class='photo' src='data:image/png;base64," + img_data + "'></div>" +
-			//"<div class='photobox'><div class='photo lavatar' style='background:" + color + "'>" + initial + "</div></div>" +
+			//"<div class='photobox'><img class='photo' src='data:image/png;base64," + img_data + "'></div>" +
+			"<div class='photobox'><div class='photo lavatar' style='background:" + color + "'>" + initial + "</div></div>" +
 			"<div class='textbox'>" +
 			"<div class='username'>"+message.username+"</div>" +
 			"<div><span>" + message.content + "</span></div></div></div>");
