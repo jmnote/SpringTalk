@@ -1,6 +1,0 @@
----
-applications:
-- name: SpringTalk
-  memory: 512M
-  host: talk
-  domain: devpack.co.kr

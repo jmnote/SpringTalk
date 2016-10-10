@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SpringTalk</title>
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+<script src="/webjars/jquery/jquery.min.js"></script>
+<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+<script src="/app.js"></script>
+
+<script src='//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core-min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/md5-min.js'></script>
+<script src="//rawgit.com/stewartlord/identicon.js/master/pnglib.js"></script>
+<script src="//rawgit.com/stewartlord/identicon.js/master/identicon.js"></script>
+<script src='//cdn.rawgit.com/zenozeng/color-hash/master/dist/color-hash.js'></script>
+</head>
+
+<body>
+	<div class="container">
+		<div>
+			이름: <input id='username' type='text'>
+		</div>
+	</div>
+	<div id="main-content" class="container">
+		<div class="row">
+			<div id="conversation"></div>
+		</div>
+		<div class="row">
+			<form class="form-inline">
+				<div class="col-xs-9">
+					<input type="text" style='width: 100%' id="content"
+						class="form-control">
+				</div>
+				<div class="col-xs-3">
+					<button id="send" style='width: 100%' class="btn btn-default"
+						type="submit">보내기</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
