@@ -1,6 +1,6 @@
 ---
 applications:
-- name: SpringTalk
+- name: spring-talk
   memory: 512M
   random-route: true
   path: build/libs/springtalk-0.0.1-SNAPSHOT.jar
